@@ -1,0 +1,18 @@
+//Config
+
+@import './config/reset';
+@import './config/varibles';
+@import './config/mixins';
+@import './config/baseLayout';
+
+//Component
+
+@import './components/_header';
+@import './components/_sectionServises';
+@import './components/_sectionAboutUs';
+@import './components/_allServises';
+@import './components/_allProject';
+@import './components/_aboutUsVideo';
+@import './components/_subscribe';
+@import './components/_footer';
+@import './components/_mediaquery';
