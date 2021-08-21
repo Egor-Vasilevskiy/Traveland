@@ -38,10 +38,8 @@
 	line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
-$font-family: Montserrat, sans-serif;
-
-@mixin font-face($weight: normal, $style: normal, $align: center){
-    font-family: $font-family;
+@mixin font-face($fonts: Gelasio serif, $weight: normal, $style: normal, $align: center){
+    font-family: $fonts;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
