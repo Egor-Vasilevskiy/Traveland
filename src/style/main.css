@@ -464,7 +464,7 @@ header:before {
 }
 
 .intro {
-  background-image: url(/src/image/backgroundHeader.png);
+  background-image: url(..//image/backgroundHeader.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
