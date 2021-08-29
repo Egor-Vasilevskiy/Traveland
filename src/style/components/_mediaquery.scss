@@ -1,0 +1,107 @@
+@include md { //Для header
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header {
+        &__body {
+            justify-content: space-evenly;
+            height: 50px;
+        }
+
+        &:before {
+            display: block;
+        }
+
+        &__burger {
+            order: 1;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 3;
+
+            & span {
+                position: absolute;
+                background-color: #fff;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:after,
+            &::before {
+                content: "";
+                background-color:#fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:before {
+                top: 0px;
+            }
+
+            &:after {
+                bottom: 0px;
+            }
+
+            &.active:before {
+                transform: rotate(45deg);
+		        top: 9px;
+            }
+
+            &.active:after {
+                transform: rotate(-45deg);
+		        bottom: 9px;
+            }
+
+            &.active span {
+                transform: scale(0);
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__menu {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 70px 10px 20px 10px;
+            transition: all 0.3s ease 0s;
+            overflow: auto;
+            display: flex;
+            justify-content: flex-end;
+
+            &.active {
+                top: 0px;
+            }
+        }
+
+        &__list {
+            display: block;
+
+            & li {
+                margin-bottom: 10px;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .intro {
+        &__body {
+            padding: 0 20px 0 20px;
+        }
+    }
+}
