@@ -1,0 +1,19 @@
+.offers {
+    &__body{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    &__title {
+        @include font-face($fonts:$font-family-title, $weight:500);
+        font-size: 43px;
+        line-height: 140%;
+    }
+
+    &__copy {
+        @include font-face($fonts:$font-family-text);
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.6;
+    }
+}
