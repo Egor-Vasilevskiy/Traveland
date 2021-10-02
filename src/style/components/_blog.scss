@@ -1,0 +1,90 @@
+.blog {
+    margin-top: 140px;
+    
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        @include font-face($fonts:$font-family-title, $weight:500);
+        font-size: 43px;
+        line-height: 140%;
+    }
+
+    &__copy {
+        margin: 20px auto 50px;
+        @include font-face($fonts:$font-family-text);
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.6;
+        max-width: 520px;
+    }
+}
+
+.news {
+    display: flex;
+    
+    &__body {
+        margin: 20px;
+    }
+
+    &__item {
+        margin: 15px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__title {
+        @include font-face($fonts:$font-family-title, $weight:500, $align:left);
+        font-size: 20px;
+        line-height: 160%;  
+    }
+
+    &__copy {
+        @include font-face($fonts:$font-family-text, $align:left);
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.6;
+        margin: 8px 0;
+    }
+
+    &__link {
+        @include font-face($fonts:$font-family-text, $align:left);
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+.Park{
+    max-width: 555px;
+}
+
+.news__park {
+    img {
+        width: 100%;
+    }
+
+    &-title {
+        @include font-face($fonts:$font-family-title, $weight:500, $align:left);
+        font-size: 20px;
+        line-height: 160%;  
+        margin-top:35px;
+    }
+
+    &-copy {
+        @include font-face($fonts:$font-family-text, $align:left);
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 0.6;
+        margin: 10px 0;
+    }
+
+    &-link {
+        @include font-face($fonts:$font-family-text, $align:left);
+        font-size: 20px;
+        line-height: 150%;
+    }
+}

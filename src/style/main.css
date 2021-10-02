@@ -613,6 +613,30 @@ header:before {
   .intro__body {
     padding: 0 20px 0 20px;
   }
+  .news__park {
+    width: 100%;
+  }
+  .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .top__body {
@@ -912,4 +936,122 @@ header:before {
   .btn-next {
     margin-left: 10px;
   }
+}
+
+.blog {
+  margin-top: 140px;
+}
+
+.blog__body {
+  text-align: center;
+}
+
+.blog__title {
+  font-family: Gelasio, serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 43px;
+  line-height: 140%;
+}
+
+.blog__copy {
+  margin: 20px auto 50px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.6;
+  max-width: 520px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news__body {
+  margin: 20px;
+}
+
+.news__item {
+  margin: 15px;
+}
+
+.news__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.news__title {
+  font-family: Gelasio, serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.news__copy {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.6;
+  margin: 8px 0;
+}
+
+.news__link {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.Park {
+  max-width: 555px;
+}
+
+.news__park img {
+  width: 100%;
+}
+
+.news__park-title {
+  font-family: Gelasio, serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 20px;
+  line-height: 160%;
+  margin-top: 35px;
+}
+
+.news__park-copy {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.6;
+  margin: 10px 0;
+}
+
+.news__park-link {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  font-size: 20px;
+  line-height: 150%;
 }

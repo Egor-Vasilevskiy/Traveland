@@ -104,4 +104,19 @@
             padding: 0 20px 0 20px;
         }
     }
+
+    .news__park {
+        width: 100%;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__container {
+        display: flex;
+        flex-direction: column;
+    }
 }
