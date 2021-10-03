@@ -637,6 +637,60 @@ header:before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .footer__info {
+    margin-top: 20px;
+  }
+  .footer__info-one {
+    margin-left: 30px;
+  }
+  .footer__info-two {
+    margin-right: 30px;
+  }
+  .social__links li {
+    margin: 0 20px;
+  }
+  .footer__subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .footer__subscribe form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .top__body {
@@ -1079,7 +1133,6 @@ header:before {
   font-size: 24px;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 100px;
 }
 
 .footer__copy {
@@ -1124,7 +1177,7 @@ header:before {
 }
 
 .email__input {
-  max-width: 195px;
+  max-width: 180px;
   height: 45px;
   padding: 0 20px;
   margin-right: 35px;

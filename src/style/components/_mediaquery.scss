@@ -97,6 +97,8 @@
                 }
             }
         }
+
+
     }
 
     .intro {
@@ -119,4 +121,49 @@
         display: flex;
         flex-direction: column;
     }
+
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: center;
+    }
+
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer__info {
+        margin-top: 20px;
+    }
+
+    .footer__info-one {
+        margin-left: 30px;
+    }
+
+    .footer__info-two{
+        margin-right: 30px;
+    }
+
+    .social__links {
+        li {
+            margin: 0 20px;
+        }
+    }
+
+    .footer__subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+
+        form {
+            display: flex;
+        }
+    }
+
+
 }
