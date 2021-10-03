@@ -1,0 +1,81 @@
+.footer {
+    margin-top: 140px;
+    background: rgba(38, 148, 153, 0.04);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+    }
+
+    &__logo {
+        @include font-face($fonts:$font-family-logo);
+        font-size: 24px;
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 100px;
+    }
+
+    &__copy {
+        @include font-face($fonts:$font-family-text, $align: left);
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.06em;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        @include font-face($fonts:$font-family-text, $align: left, $weight:500);
+        text-decoration: none;
+        font-size: 16px;
+        color: #000000;
+        padding: 10px 0;
+    }
+
+    &__subscribe {
+
+        &-title {
+            @include font-face($fonts:$font-family-text, $align: left, $weight:500);
+            font-size: 20px;
+            line-height: 150%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.email__input {
+    max-width: 195px;
+    height: 45px;
+    padding: 0 20px;
+    margin-right: 35px;
+    border: 2px solid #F2F2F2;
+    outline: none; 
+    -webkit-appearance: none; 
+}
+
+.subscribe__input {
+    max-width: 100px;
+    height: 45px;
+    padding: 0 30px;
+    border: none;
+    outline: none; 
+    -webkit-appearance: none; 
+    background: #C9453B;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+input.email__input::placeholder {
+    color: #000000;
+}
+
+
+.social__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
